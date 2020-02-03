@@ -1,0 +1,195 @@
+body {
+    background-color: rgb(46, 46, 46);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#videoarea {
+    position: fixed;
+    z-index: -100;
+    background-size: cover;
+}
+
+.container {
+    font-family: "Helvetica Neue" , Helvetica;
+    color: #FFFFFF;
+    background-color: rgba(23, 23, 23, 0.8);
+    width: 65%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+/* top section of the page */
+
+.logo {
+    font-weight: 500;
+}
+
+header {
+    display: flex;
+}
+
+.check {
+    font-weight: 300;
+}
+
+#date {
+    font-weight: 500;
+    margin-left: auto;
+    font-size: 14px;
+}
+
+/* end top section of the page */
+
+
+
+/* middle message section of the page */
+
+.message-area {
+    margin-top: auto;
+}
+
+.message-title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.message-content {
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.message-subtext {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* end middle message section of the page */
+
+
+
+/* bottom section of the page */
+
+.bottom {
+    margin-top: auto;
+    bottom: 0;
+    display: flex;
+}
+
+.bottom-left {
+    display: flex;
+    bottom: 0;
+    font-size: 68px;
+    font-weight: 300;
+}
+
+.bottom-right {
+    margin-left: auto;
+    text-align: right;
+}
+
+.city {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.temp-sub {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer {
+    bottom: 0;
+    background-color: rgba(23, 23, 23, 0.3); 
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    padding: 10px;
+}
+
+footer > a , p {
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+footer > a:hover {
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 750px) {   
+    .message-title {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .message-content {
+        font-size: 20px;
+    }
+    
+    .message-subtext {
+        padding-top: 10px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .city {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .bottom-left {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 500px) { 
+    #date {
+        font-size: 12px;
+    }
+
+    .message-content {
+        font-size: 14px;
+    }
+
+    .message-subtext {
+        padding-top: 15px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .bottom {
+        display: inline;
+    }
+
+    .bottom-right {
+        margin-right: auto;
+        text-align: left;
+        padding-top: 10px;
+    }
+
+    .city {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    .temp-sub {
+        padding-top: 10px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    
+}
