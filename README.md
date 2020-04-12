@@ -1,6 +1,7 @@
 # Weathercheck App
 
 A simple application using 3 APIs to check the weather in your location.
+https://johnsonchon.github.io/weathercheck/
 
 #weather #api
 
